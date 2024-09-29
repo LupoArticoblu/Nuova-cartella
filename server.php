@@ -1,2 +1,3 @@
 <?php
- //inserire i metodi e le indicazioni che il server deve compiere per il corretto funzionamento della pagina
+ echo 'questo è il nostro file server.php';
+?> 
