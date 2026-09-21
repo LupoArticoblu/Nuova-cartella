@@ -40,14 +40,22 @@ int main(){
     int eta = 30;
     eta+= 5;
 
-    std::cout << std::pow(eta, 2) << std::endl; // elevamento a potenza
-    std::cout << std::sqrt(eta) << std::endl; // radice quadrata
+    std::cout << "30 elevato a potenza di 2 " << std::pow(eta, 2) << std::endl; // elevamento a potenza
+    std::cout << "Radice quadrata di 30 " << std::sqrt(eta) << std::endl; // radice quadrata
 
     //stringhe: sono un insieme di caratteri che formano una o più parole
-    string nome = "lucio"; //ho scritto il nome con una lettera minuscola, ma voglio che la prima lettera sia maiuscola. 
+    string nom = "lucio"; //ho scritto il nome con una lettera minuscola, ma voglio che la prima lettera sia maiuscola. 
 
-    nome[0] = 'L'; //così ho modificato il primo carattere della stringa, che è un array di caratteri, e l'ho cambiato in maiuscolo.
+    nom[0] = 'L'; //così ho modificato il primo carattere della stringa, che è un array di caratteri, e l'ho cambiato in maiuscolo.
 
+    //metodi
+    std::cout << nom.size() << std::endl; //size() è un metodo che restituisce la lunghezza della stringa, in questo caso 5.
+    std::cout << nom.length() << std::endl; //length() è uguale a size
+    std::cout << nom[nom.length() - 1] << std::endl; // troviamo l'ultima lettera del nome
+ 
+    std::cout << nom.append(" Rossi") << std::endl; //append() è un metodo che aggiunge una stringa alla fine di un'altra stringa.
+    
+    std::cout << nom.find("c") << std::endl; //find() è un metodo che restituisce la posizione della prima occorrenza di una sottostringa all'interno di una stringa. In questo caso, restituisce 2, perché la lettera "c" si trova alla posizione 2 della stringa "Lucio Rossi".
 
     
     return 0;
